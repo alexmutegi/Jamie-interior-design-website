@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://alexmutegi12.github.io/jamie-interior-designs/sitemap.xml
