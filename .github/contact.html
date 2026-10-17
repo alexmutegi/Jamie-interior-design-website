@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Contact and free quote | Jamie Design</title>
+<meta name="description" content="Request a free quote from Jamie Design. Call or message on WhatsApp +254 727 413 364.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400&family=Jost:wght@200;300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body data-page="contact">
+<main>
+<section class="pagehead"><div class="wrap"><h1>Contact us</h1></div></section>
+<section style="border:0"><div class="wrap qgrid">
+  <div>
+    <h2 id="quote">Request a free quote</h2>
+    <p class="lead">Share a few details and we'll reply on WhatsApp within one working day.</p>
+    <p>Prefer to talk? Call or message us:</p>
+    <div class="alt"><a class="btn sm" href="tel:+254727413364">Call +254 727 413 364</a><a class="btn sm ghost" href="https://wa.me/254727413364">WhatsApp</a></div>
+  </div>
+  <form id="qform">
+    <div class="two"><label>Name<input name="name" required autocomplete="name"></label><label>Phone number<input name="phone" type="tel" required autocomplete="tel"></label></div>
+    <label>Location (area or estate)<input name="loc" required></label>
+    <label>Service required<select name="service" id="svcSel"></select></label>
+    <label>Project details<textarea name="msg" rows="4" required placeholder="Rooms, approximate size, style you like, budget, preferred start date"></textarea></label>
+    <button class="btn" type="submit">Send quote request</button>
+    <div id="sent" role="status"></div>
+  </form>
+</div></section>
+</main>
+<script src="site.js"></script>
+</body>
+</html>
