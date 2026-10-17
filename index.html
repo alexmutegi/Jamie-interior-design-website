@@ -3,250 +3,281 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Jamie Interior Designs | Gypsum ceilings, interiors and decor</title>
-<meta name="description" content="Modern gypsum ceilings, interiors, space planning, painting and decor artwork by Jamie Interior Designs.">
+<title>Jamie Design | Gypsum ceilings, interiors and decor in Kenya</title>
+<meta name="description" content="Jamie Design: gypsum and false ceilings, lighting design, interior finishing, painting, space planning and decor. Get a free quote on WhatsApp.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400&family=Jost:wght@200;300;400;500&display=swap" rel="stylesheet">
 <style>
 :root{
-  --berry:#A81F58; --berry-ink:#fff;
-  --bg:#F6F2EF; --surface:#EAE2DC; --ink:#241C20; --muted:#6B5E64; --line:#D5C9C2; --glow:#F3C98B;
-  --serif:'Cormorant Garamond',Georgia,serif; --sans:'Jost','Helvetica Neue',Arial,sans-serif;
-  box-sizing:border-box; padding-top:env(safe-area-inset-top,0px); padding-bottom:env(safe-area-inset-bottom,0px);
+  --berry:#A81F58;--bg:#F6F2EF;--surface:#EAE2DC;--ink:#241C20;--muted:#6B5E64;--line:#D5C9C2;--glow:#F3C98B;
+  --serif:'Cormorant Garamond',Georgia,serif;--sans:'Jost','Helvetica Neue',Arial,sans-serif;
+  box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);
 }
 @media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#17120F;--surface:#241C19;--ink:#F1E9E4;--muted:#B5A7A1;--line:#3A302C;--glow:#E8B56E}}
 :root[data-theme="dark"]{--bg:#17120F;--surface:#241C19;--ink:#F1E9E4;--muted:#B5A7A1;--line:#3A302C;--glow:#E8B56E}
-html{scroll-padding-top:calc(env(safe-area-inset-top,0px) + 70px);scroll-behavior:smooth}
+html{scroll-padding-top:calc(env(safe-area-inset-top,0px) + 76px);scroll-behavior:smooth}
 *,*::before,*::after{box-sizing:border-box}
 body{margin:0;background:var(--bg);color:var(--ink);font:300 17px/1.65 var(--sans);-webkit-font-smoothing:antialiased}
 body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);background:var(--bg);z-index:30}
 a{color:inherit}
-img,svg{max-width:100%}
 :focus-visible{outline:2px solid var(--berry);outline-offset:3px}
 .wrap{max-width:1100px;margin:0 auto;padding:0 24px}
 h1,h2,h3{font-family:var(--serif);font-weight:400;line-height:1.08;margin:0}
-h2{font-size:clamp(2rem,5vw,3.2rem);margin-bottom:.6em}
+h2{font-size:clamp(2rem,5vw,3.2rem);margin-bottom:.5em}
 p{margin:0 0 1em;max-width:62ch}
-.btn{display:inline-block;background:var(--berry);color:var(--berry-ink);padding:14px 28px;text-decoration:none;font-weight:400;letter-spacing:.14em;text-transform:uppercase;font-size:.8rem;border:0;cursor:pointer;font-family:var(--sans)}
+.lead{color:var(--muted);font-size:1.1rem}
+.btn{display:inline-block;background:var(--berry);color:#fff;padding:14px 26px;text-decoration:none;font-weight:400;letter-spacing:.14em;text-transform:uppercase;font-size:.78rem;border:0;cursor:pointer;font-family:var(--sans);text-align:center}
 .btn.ghost{background:transparent;color:var(--ink);border:1px solid var(--ink)}
+.btn.sm{padding:10px 18px}
 /* header */
 header{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;background:var(--bg);border-bottom:1px solid var(--line)}
-.bar{display:flex;align-items:center;justify-content:space-between;height:68px}
+.bar{display:flex;align-items:center;justify-content:space-between;height:68px;gap:16px}
 .logo{text-decoration:none;line-height:1}
-.logo b{display:block;font:500 .95rem var(--serif);letter-spacing:.32em;text-transform:uppercase}
+.logo b{display:block;font:500 .8rem var(--serif);letter-spacing:.34em;text-transform:uppercase}
 .logo span{font-weight:200;font-size:1.5rem;letter-spacing:.3em;text-transform:uppercase}
+.dnav{display:none;gap:26px;align-items:center}
+.dnav a{text-decoration:none;font-size:.8rem;letter-spacing:.18em;text-transform:uppercase}
+.dnav a.btn{color:#fff}
 .menu-btn{background:none;border:0;color:var(--ink);cursor:pointer;padding:10px;display:flex;flex-direction:column;gap:6px}
-.menu-btn i{display:block;width:28px;height:1.5px;background:currentColor}
-.menu-btn i:last-child{width:18px;align-self:flex-end}
+.menu-btn i{display:block;width:28px;height:1.5px;background:currentColor}.menu-btn i:last-child{width:18px;align-self:flex-end}
+@media(min-width:900px){.dnav{display:flex}.menu-btn{display:none}}
 /* overlay menu */
 #menu{position:fixed;inset:0;z-index:50;background:var(--berry);color:#fff;overflow-y:auto;padding:calc(env(safe-area-inset-top,0px) + 24px) 28px calc(env(safe-area-inset-bottom,0px) + 28px);transform:translateY(-100%);visibility:hidden;transition:transform .45s cubic-bezier(.7,0,.2,1),visibility 0s .45s}
 #menu.open{transform:none;visibility:visible;transition:transform .45s cubic-bezier(.7,0,.2,1)}
-#menu .top{display:flex;justify-content:space-between;align-items:flex-start;max-width:1100px;margin:0 auto}
-#menu .logo span{color:#fff}
+#menu .top{display:flex;justify-content:space-between;align-items:flex-start}
 .close{background:none;border:0;color:#fff;font-size:2.2rem;line-height:1;cursor:pointer;font-weight:200;padding:4px 8px}
-#menu nav{max-width:1100px;margin:36px auto 0;display:flex;flex-direction:column}
-#menu nav a{font-weight:200;font-size:clamp(1.9rem,6vw,3rem);letter-spacing:.22em;text-transform:uppercase;text-decoration:none;padding:6px 0;width:max-content}
-#menu nav a:hover{letter-spacing:.3em;transition:letter-spacing .3s}
-.m-foot{max-width:1100px;margin:40px auto 0}
-.social{display:flex;gap:14px;margin-bottom:22px}
+#menu nav{margin-top:34px;display:flex;flex-direction:column}
+#menu nav a{font-weight:200;font-size:clamp(1.9rem,7vw,2.8rem);letter-spacing:.22em;text-transform:uppercase;text-decoration:none;padding:5px 0;width:max-content}
+.m-foot{margin-top:34px}
+.social{display:flex;gap:12px;margin-bottom:20px}
 .social a{width:44px;height:44px;border-radius:50%;background:#fff;color:var(--berry);display:grid;place-items:center;text-decoration:none;font:500 .8rem var(--sans)}
-.m-foot small{display:block;font-size:.8rem;letter-spacing:.16em;text-transform:uppercase;line-height:1.9}
-.m-foot .offices{display:flex;flex-wrap:wrap;gap:28px 48px;margin-top:20px}
-.m-foot .offices div{border-top:1px solid rgba(255,255,255,.7);padding-top:8px}
+.m-foot small{display:block;font-size:.85rem;letter-spacing:.16em;text-transform:uppercase}
 /* hero */
-.hero{display:grid;gap:40px;padding:56px 0 72px;align-items:center}
-@media(min-width:860px){.hero{grid-template-columns:1.05fr 1fr;padding:80px 0 96px}}
-.hero h1{font-size:clamp(2.8rem,8vw,5.6rem);letter-spacing:-.01em;margin-bottom:.4em}
+.hero{display:grid;gap:36px;padding:48px 0 64px;align-items:center}
+@media(min-width:860px){.hero{grid-template-columns:1fr 1fr;padding:72px 0 88px}}
+.hero h1{font-size:clamp(2.9rem,8.5vw,5.6rem);margin-bottom:.35em}
 .hero h1 em{font-style:italic;color:var(--berry)}
-.hero p{font-size:1.1rem;color:var(--muted)}
-.cta{display:flex;gap:14px;flex-wrap:wrap;margin-top:28px}
-/* ceiling illustration */
-.ceiling{aspect-ratio:1/1;max-width:520px;width:100%;margin-inline:auto;background:var(--surface);padding:7%;position:relative;box-shadow:inset 0 0 60px rgba(0,0,0,.12)}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]) .hero h1 em{color:#F08AB4}}
+.cta{display:flex;gap:12px;flex-wrap:wrap;margin-top:26px}
+.proof{display:flex;gap:10px 26px;flex-wrap:wrap;margin-top:26px;font-size:.9rem;color:var(--muted)}
+.proof span::before{content:"\2713\00a0";color:var(--berry);font-weight:500}
+.photo{aspect-ratio:4/5;max-width:520px;width:100%;margin-inline:auto;background-size:cover;background-position:center;position:relative;
+  background-color:var(--surface);padding:7%}
 .tier{width:100%;height:100%;padding:9%;background:var(--bg);box-shadow:0 0 0 3px var(--glow),0 0 28px 6px color-mix(in srgb,var(--glow) 70%,transparent),inset 0 0 18px rgba(0,0,0,.14)}
-.tier .tier{background:var(--surface);box-shadow:0 0 0 3px var(--glow),0 0 22px 4px color-mix(in srgb,var(--glow) 60%,transparent),inset 0 0 14px rgba(0,0,0,.16)}
-.tier .tier .tier{background:var(--bg);display:grid;place-items:center;padding:0}
+.tier .tier{background:var(--surface)}.tier .tier .tier{background:var(--bg);display:grid;place-items:center;padding:0}
 .pendant{width:34%;aspect-ratio:1;border-radius:50%;background:radial-gradient(circle,#fff6e4 0 18%,var(--glow) 45%,transparent 72%)}
-.ceiling-cap{font:italic 1rem var(--serif);color:var(--muted);text-align:center;margin-top:14px}
+.photo.has-img{padding:0}.photo.has-img .tier{display:none}
 /* sections */
-section{padding:80px 0;border-top:1px solid var(--line)}
-.svc{list-style:none;margin:0;padding:0}
-.svc li{display:grid;gap:4px 32px;padding:22px 0;border-bottom:1px solid var(--line)}
-@media(min-width:760px){.svc li{grid-template-columns:1fr 1.2fr;align-items:baseline}}
-.svc h3{font-size:1.7rem}
-.svc p{margin:0;color:var(--muted)}
-.filters{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:26px}
-.filters button{background:none;border:1px solid var(--line);color:var(--ink);padding:9px 18px;font:300 .9rem var(--sans);letter-spacing:.08em;cursor:pointer}
-.filters button[aria-pressed="true"]{background:var(--berry);border-color:var(--berry);color:#fff}
-.grid{display:grid;gap:16px;grid-template-columns:repeat(auto-fill,minmax(240px,1fr))}
-.tile{aspect-ratio:4/5;padding:18px;display:flex;align-items:flex-end;color:#fff;font:italic 1.2rem var(--serif);position:relative}
-.tile small{display:block;font:300 .75rem var(--sans);letter-spacing:.14em;text-transform:uppercase;opacity:.9}
-.tile[hidden]{display:none}
-.t1{background:linear-gradient(160deg,#5a4a52,#2b2126)}.t2{background:linear-gradient(160deg,#C58B6F,#7b4a3b)}
-.t3{background:linear-gradient(160deg,#A81F58,#4f0f2c)}.t4{background:linear-gradient(160deg,#7f8c80,#3d4a42)}
-.t5{background:linear-gradient(160deg,#d8b377,#8a6430)}.t6{background:linear-gradient(160deg,#6c7a96,#2f3a52)}
+section{padding:76px 0;border-top:1px solid var(--line)}
+.grid{display:grid;gap:18px;grid-template-columns:repeat(auto-fill,minmax(250px,1fr))}
+.card{border:1px solid var(--line);padding:24px;display:flex;flex-direction:column;gap:6px;background:var(--bg)}
+.card h3{font-size:1.55rem}.card p{color:var(--muted);margin:0;font-size:.97rem}
+.card a{margin-top:auto;padding-top:12px;font-size:.78rem;letter-spacing:.14em;text-transform:uppercase;color:var(--berry);text-decoration:none;font-weight:400}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]) .card a{color:#F08AB4}}
+.budget{margin-top:22px;background:var(--surface);padding:26px;display:grid;gap:12px}
+.budget h3{font-size:1.7rem}.budget p{margin:0;color:var(--muted)}
+/* before/after */
+.proj h3{font-size:1.5rem;margin-top:12px}.proj p{margin:2px 0 0;color:var(--muted);font-size:.93rem}
+.ba{position:relative;aspect-ratio:4/3;overflow:hidden;--p:50%;user-select:none;touch-action:pan-y}
+.layer{position:absolute;inset:0;background-size:cover;background-position:center}
+.layer.a{clip-path:inset(0 0 0 var(--p))}
+.tag{position:absolute;top:10px;padding:3px 10px;background:rgba(0,0,0,.6);color:#fff;font-size:.7rem;letter-spacing:.16em;text-transform:uppercase}
+.tag.l{left:10px}.tag.r{right:10px}
+.handle{position:absolute;top:0;bottom:0;left:var(--p);width:2px;background:#fff;box-shadow:0 0 6px rgba(0,0,0,.5)}
+.handle::after{content:"\2194";position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:38px;height:38px;border-radius:50%;background:#fff;color:var(--berry);display:grid;place-items:center;font-size:1.1rem}
+.ba input{position:absolute;inset:0;width:100%;height:100%;opacity:0;cursor:ew-resize;margin:0}
+.ba:focus-within{outline:2px solid var(--berry)}
 .note{font-size:.85rem;color:var(--muted);margin-top:16px}
-.about{display:grid;gap:36px}
-@media(min-width:860px){.about{grid-template-columns:1fr 1.3fr}}
-.stats{display:flex;gap:32px;flex-wrap:wrap;margin-top:24px}
-.stats div{font:400 2.4rem var(--serif)}.stats span{display:block;font:300 .85rem var(--sans);color:var(--muted)}
-form{display:grid;gap:16px;max-width:620px}
+/* why */
+.why .card{background:var(--surface);border:0}
+.num{font:italic 2.2rem var(--serif);color:var(--berry)}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]) .num{color:#F08AB4}}
+.steps{counter-reset:s;display:grid;gap:18px;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));margin-top:10px}
+.steps div{border-top:2px solid var(--berry);padding-top:12px}.steps b{font:400 1.4rem var(--serif);display:block}
+.steps p{margin:0;color:var(--muted);font-size:.95rem}
+.stars{color:var(--berry);letter-spacing:.2em}
+blockquote{margin:0;font:italic 1.25rem/1.4 var(--serif)}
+cite{font:400 .85rem var(--sans);font-style:normal;color:var(--muted);letter-spacing:.06em}
+/* form */
+.qgrid{display:grid;gap:40px}@media(min-width:860px){.qgrid{grid-template-columns:1fr 1.2fr}}
+form{display:grid;gap:16px}
 label{display:grid;gap:6px;font-size:.9rem;letter-spacing:.04em}
 input,select,textarea{font:300 1rem var(--sans);padding:13px 14px;background:var(--surface);color:var(--ink);border:1px solid var(--line);border-radius:0;width:100%}
 .two{display:grid;gap:16px}@media(min-width:560px){.two{grid-template-columns:1fr 1fr}}
-#sent{color:var(--berry);font-weight:400;min-height:1.5em}
-@media(prefers-color-scheme:dark){:root:not([data-theme="light"]) #sent{color:#F08AB4}}
-footer{background:var(--berry);color:#fff;padding:44px 0 90px}
-footer .wrap{display:flex;flex-wrap:wrap;gap:24px 60px;justify-content:space-between;font-size:.9rem}
-footer a{text-decoration:none;border-bottom:1px solid rgba(255,255,255,.5)}
-.wa{position:fixed;right:18px;bottom:calc(env(safe-area-inset-bottom,0px) + 18px);z-index:25;width:58px;height:58px;border-radius:50%;background:#1F9D55;color:#fff;display:grid;place-items:center;text-decoration:none;font:500 .8rem var(--sans);box-shadow:0 4px 14px rgba(0,0,0,.3)}
+.alt{display:flex;gap:12px;flex-wrap:wrap}
+#sent{min-height:1.5em;color:var(--berry)}
+.band{background:var(--berry);color:#fff;text-align:center;padding:56px 0;border:0}
+.band h2{margin-bottom:.3em}.band .btn{background:#fff;color:var(--berry)}.band p{margin-inline:auto}
+footer{background:#1b1418;color:#f1e9e4;padding:40px 0 100px;font-size:.9rem}
+footer .wrap{display:flex;flex-wrap:wrap;gap:20px 60px;justify-content:space-between}
+footer a{text-decoration:none;border-bottom:1px solid rgba(255,255,255,.4)}
+/* sticky actions */
+.wa{position:fixed;right:18px;bottom:calc(env(safe-area-inset-bottom,0px) + 18px);z-index:25;width:58px;height:58px;border-radius:50%;background:#1F9D55;color:#fff;display:none;place-items:center;text-decoration:none;font:500 .85rem var(--sans);box-shadow:0 4px 14px rgba(0,0,0,.3)}
+.mbar{position:fixed;left:0;right:0;bottom:0;z-index:25;display:grid;grid-template-columns:1fr 1fr 1.3fr;background:var(--bg);border-top:1px solid var(--line);padding-bottom:env(safe-area-inset-bottom,0px)}
+.mbar a{padding:15px 6px;text-align:center;text-decoration:none;font-size:.75rem;letter-spacing:.12em;text-transform:uppercase;font-weight:400}
+.mbar a:last-child{background:var(--berry);color:#fff}
+@media(min-width:900px){.mbar{display:none}.wa{display:grid}footer{padding-bottom:40px}}
 @media(prefers-reduced-motion:reduce){#menu,#menu.open{transition:none}html{scroll-behavior:auto}}
 </style>
 </head>
 <body>
-<header>
-  <div class="wrap bar">
-    <a class="logo" href="#top" aria-label="Jamie Interior Designs home"><b>Jamie</b><span>Interiors</span></a>
-    <button class="menu-btn" id="open" aria-label="Open menu" aria-controls="menu" aria-expanded="false"><i></i><i></i></button>
-  </div>
-</header>
+<header><div class="wrap bar">
+  <a class="logo" href="#home" aria-label="Jamie Design home"><b>Jamie</b><span>Design</span></a>
+  <nav class="dnav" aria-label="Main">
+    <a href="#home">Home</a><a href="#services">Services</a><a href="#portfolio">Portfolio</a><a href="#about">About</a><a href="#contact">Contact</a>
+    <a class="btn sm" href="#quote">Get a Quote</a>
+  </nav>
+  <button class="menu-btn" id="open" aria-label="Open menu" aria-controls="menu" aria-expanded="false"><i></i><i></i></button>
+</div></header>
 
 <div id="menu" role="dialog" aria-modal="true" aria-label="Main menu">
-  <div class="top">
-    <a class="logo" href="#top" data-nav><b style="color:#fff">Jamie</b><span>Interiors</span></a>
-    <button class="close" id="close" aria-label="Close menu">&times;</button>
-  </div>
+  <div class="top"><a class="logo" href="#home" data-nav><b style="color:#fff">Jamie</b><span>Design</span></a><button class="close" id="close" aria-label="Close menu">&times;</button></div>
   <nav>
-    <a href="#portfolio" data-nav>Portfolio</a>
-    <a href="#about" data-nav>About</a>
-    <a href="#services" data-nav>Services</a>
-    <a href="#blog" data-nav>Blog</a>
-    <a href="#shop" data-nav>Shop</a>
-    <a href="#contact" data-nav>Contact</a>
+    <a href="#home" data-nav>Home</a><a href="#services" data-nav>Services</a><a href="#portfolio" data-nav>Portfolio</a><a href="#about" data-nav>About</a><a href="#contact" data-nav>Contact</a><a href="#quote" data-nav>Get a Quote</a>
   </nav>
   <div class="m-foot">
-    <div class="social">
-      <a href="#" aria-label="Instagram">IG</a><a href="#" aria-label="Facebook">f</a><a href="#" aria-label="Pinterest">P</a><a href="#" aria-label="TikTok">TT</a><a href="#" aria-label="LinkedIn">in</a>
-    </div>
-    <small>+254 700 000 000</small>
-    <div class="offices"><div><small>Studio</small><small>Street name, Building<br>City, Kenya</small></div></div>
+    <div class="social"><a href="#" aria-label="Instagram">IG</a><a href="#" aria-label="Facebook">f</a><a href="#" aria-label="Pinterest">P</a><a href="#" aria-label="TikTok">TT</a></div>
+    <small>+254 727 413 364</small><small>WhatsApp &middot; Free quotes</small>
   </div>
 </div>
 
-<main id="top">
+<main id="home">
 <div class="wrap hero">
   <div>
-    <h1>Ceilings that <em>change</em> the whole room.</h1>
-    <p>Jamie Interior Designs plans, designs and finishes modern homes and offices, from gypsum ceilings to the colour on the walls and the art that hangs on them.</p>
-    <div class="cta"><a class="btn" href="#contact">Get a quote</a><a class="btn ghost" href="#portfolio">View our work</a></div>
+    <h1>Beautiful Spaces <em>Start Here.</em></h1>
+    <p class="lead">Gypsum ceilings, lighting, finishing, paint and decor, planned and delivered by one team. Tell us about your space and get a free quote.</p>
+    <div class="cta"><a class="btn" href="#quote">Get a free quote</a><a class="btn ghost" href="#portfolio">See before &amp; after</a></div>
+    <div class="proof"><span>Free quote</span><span>Reply within one working day</span><span>Reliable delivery</span></div>
   </div>
-  <div>
-    <div class="ceiling" role="img" aria-label="Illustration of a stepped gypsum ceiling with warm cove lighting and a pendant light">
-      <div class="tier"><div class="tier"><div class="tier"><div class="pendant"></div></div></div></div>
-    </div>
-    <p class="ceiling-cap">A stepped gypsum ceiling with cove lighting, seen from below.</p>
-  </div>
+  <!-- To use a real photo: add class has-img and style="background-image:url(images/hero.jpg)" -->
+  <div class="photo" id="heroPhoto" role="img" aria-label="Modern living room with a stepped gypsum ceiling and cove lighting"><div class="tier"><div class="tier"><div class="tier"><div class="pendant"></div></div></div></div></div>
 </div>
 
 <section id="services"><div class="wrap">
-  <h2>What we do</h2>
-  <ul class="svc">
-    <li><h3>Modern gypsum ceiling installation</h3><p>Stepped, curved and recessed ceilings with cove lighting, built clean and finished smooth.</p></li>
-    <li><h3>Modern interiors</h3><p>Complete living rooms, bedrooms, kitchens and offices, from layout to final styling.</p></li>
-    <li><h3>Space planning</h3><p>Furniture and circulation layouts that make small rooms feel larger and large rooms feel warm.</p></li>
-    <li><h3>Design concepts</h3><p>Mood boards and 3D concepts you can approve before any work begins.</p></li>
-    <li><h3>Painting and decoration</h3><p>Professional surface preparation, paint, textures and feature walls.</p></li>
-    <li><h3>Colour selection</h3><p>A palette matched to your light, your furniture and how you use each room.</p></li>
-    <li><h3>Decor artwork</h3><p>Curated art and accessories placed to finish the room.</p></li>
-  </ul>
+  <h2>Our services</h2>
+  <p class="lead">Everything for a finished room, from the ceiling down.</p>
+  <div class="grid" id="svcGrid"></div>
+  <div class="budget">
+    <h3>Budget-friendly decor ideas</h3>
+    <p>A full renovation isn't always needed. We suggest affordable upgrades: a feature wall, new curtains, layered lighting and a few well-placed art pieces. Tell us your budget and we'll design to it.</p>
+    <div><a class="btn sm" href="#quote" data-s="Budget-friendly decor ideas">Ask for budget ideas</a></div>
+  </div>
 </div></section>
 
 <section id="portfolio"><div class="wrap">
-  <h2>Portfolio</h2>
-  <div class="filters" role="group" aria-label="Filter projects">
-    <button aria-pressed="true" data-f="all">All</button><button aria-pressed="false" data-f="ceilings">Ceilings</button><button aria-pressed="false" data-f="interiors">Interiors</button><button aria-pressed="false" data-f="painting">Painting</button><button aria-pressed="false" data-f="decor">Decor</button>
-  </div>
+  <h2>Before &amp; after</h2>
+  <p class="lead">Drag the slider on each project to see the transformation.</p>
+  <div class="grid" id="projGrid" style="grid-template-columns:repeat(auto-fill,minmax(300px,1fr))"></div>
+  <p class="note">Placeholder visuals. In the <code>projects</code> list near the bottom of this file, replace each <code>b</code> and <code>a</code> value with a photo path such as <code>images/living-before.jpg</code>.</p>
+</div></section>
+
+<section id="about" class="why"><div class="wrap">
+  <h2>Why choose us</h2>
   <div class="grid">
-    <div class="tile t1" data-c="ceilings"><div><small>Ceilings</small>Tray ceiling, living room</div></div>
-    <div class="tile t2" data-c="interiors"><div><small>Interiors</small>Family lounge</div></div>
-    <div class="tile t3" data-c="painting"><div><small>Painting</small>Berry feature wall</div></div>
-    <div class="tile t4" data-c="interiors"><div><small>Interiors</small>Open-plan kitchen</div></div>
-    <div class="tile t5" data-c="decor"><div><small>Decor</small>Gallery wall</div></div>
-    <div class="tile t6" data-c="ceilings"><div><small>Ceilings</small>Curved cove ceiling</div></div>
+    <div class="card"><div class="num">01</div><h3>Craftsmanship</h3><p>Clean lines, smooth finishes and ceilings built to last.</p></div>
+    <div class="card"><div class="num">02</div><h3>Quality materials</h3><p>Trusted gypsum boards, paints, fittings and fabrics.</p></div>
+    <div class="card"><div class="num">03</div><h3>Attention to detail</h3><p>From cornice joints to cable routing, we finish what others skip.</p></div>
+    <div class="card"><div class="num">04</div><h3>Reliable delivery</h3><p>Clear timelines, regular updates and no surprise costs.</p></div>
   </div>
-  <p class="note">Placeholder tiles. Replace each with a real project photo from Jamie.</p>
+  <h3 style="margin:48px 0 8px;font-size:2rem">How it works</h3>
+  <div class="steps">
+    <div><b>1. Request a quote</b><p>Send your details on WhatsApp.</p></div>
+    <div><b>2. Site visit</b><p>We measure and discuss your ideas.</p></div>
+    <div><b>3. Design and price</b><p>You approve the concept and quote.</p></div>
+    <div><b>4. We build</b><p>Installation, finishing and handover.</p></div>
+  </div>
 </div></section>
 
-<section id="about"><div class="wrap about">
-  <h2>About Jamie</h2>
+<section id="testimonials"><div class="wrap">
+  <h2>What clients say</h2>
+  <div class="grid">
+    <div class="card"><div class="stars" aria-label="5 stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div><blockquote>Add a real client review here.</blockquote><cite>Client name, location</cite></div>
+    <div class="card"><div class="stars" aria-label="5 stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div><blockquote>Add a real client review here.</blockquote><cite>Client name, location</cite></div>
+    <div class="card"><div class="stars" aria-label="5 stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div><blockquote>Add a real client review here.</blockquote><cite>Client name, location</cite></div>
+  </div>
+  <p class="note">Placeholders. Replace with genuine feedback, with the client's permission.</p>
+</div></section>
+
+<section id="contact"><div class="wrap qgrid">
   <div>
-    <p>Jamie Interior Designs is a design and fit-out studio. We handle the full job, from the first sketch to the last coat of paint, so you deal with one team.</p>
-    <p>Replace this text with Jamie's own story, approach and team details.</p>
-    <div class="stats"><div>00+<span>Years of experience</span></div><div>000+<span>Projects completed</span></div></div>
+    <h2 id="quote">Request a free quote</h2>
+    <p class="lead">Share a few details and we'll reply on WhatsApp within one working day.</p>
+    <p>Prefer to talk? Call or message us:</p>
+    <div class="alt"><a class="btn sm" href="tel:+254727413364">Call +254 727 413 364</a><a class="btn sm ghost" href="https://wa.me/254727413364">WhatsApp</a></div>
   </div>
-</div></section>
-
-<section id="blog"><div class="wrap">
-  <h2>Blog</h2>
-  <ul class="svc">
-    <li><h3>Gypsum ceiling design ideas</h3><p>Coming soon.</p></li>
-    <li><h3>How to choose paint colours</h3><p>Coming soon.</p></li>
-    <li><h3>Space planning for small living rooms</h3><p>Coming soon.</p></li>
-  </ul>
-</div></section>
-
-<section id="shop"><div class="wrap">
-  <h2>Shop</h2>
-  <p>Decor artwork will be available to order online. Until then, ask us about available pieces.</p>
-  <a class="btn ghost" href="#contact">Ask about artwork</a>
-</div></section>
-
-<section id="contact"><div class="wrap">
-  <h2>Request a quote</h2>
-  <p>Tell us about your space. We reply within one working day.</p>
-  <form id="quote">
+  <form id="qform">
     <div class="two">
       <label>Name<input name="name" required autocomplete="name"></label>
-      <label>Phone<input name="phone" type="tel" required autocomplete="tel"></label>
+      <label>Phone number<input name="phone" type="tel" required autocomplete="tel"></label>
     </div>
-    <label>Email<input name="email" type="email" autocomplete="email"></label>
-    <div class="two">
-      <label>Service
-        <select name="service"><option>Modern gypsum ceiling installation</option><option>Modern interiors</option><option>Space planning</option><option>Design concepts</option><option>Painting and decoration</option><option>Colour selection</option><option>Decor artwork</option></select>
-      </label>
-      <label>Budget range<select name="budget"><option>Not sure yet</option><option>Under KES 100,000</option><option>KES 100,000 to 500,000</option><option>KES 500,000 to 1,000,000</option><option>Above KES 1,000,000</option></select></label>
-    </div>
-    <label>Message<textarea name="msg" rows="4"></textarea></label>
-    <button class="btn" type="submit">Send on WhatsApp</button>
+    <label>Location (area or estate)<input name="loc" required></label>
+    <label>Service required<select name="service" id="svcSel"></select></label>
+    <label>Project details<textarea name="msg" rows="4" required placeholder="Rooms, approximate size, style you like, budget, preferred start date"></textarea></label>
+    <button class="btn" type="submit">Send quote request</button>
     <div id="sent" role="status"></div>
   </form>
+</div></section>
+
+<section class="band"><div class="wrap">
+  <h2>Ready to transform your space?</h2>
+  <p>Get a free quote today.</p>
+  <a class="btn" href="#quote">Get a quote</a>
 </div></section>
 </main>
 
 <footer><div class="wrap">
-  <div><strong style="font-weight:400;letter-spacing:.2em;text-transform:uppercase">Jamie Interiors</strong><br>Street name, Building, City, Kenya</div>
-  <div>+254 700 000 000<br><a href="mailto:info@jamieinteriors.com">info@jamieinteriors.com</a></div>
-  <div>&copy; <span id="yr"></span> Jamie Interior Designs</div>
+  <div><strong style="font-weight:400;letter-spacing:.2em;text-transform:uppercase">Jamie Design</strong><br>Ceilings, interiors and decor</div>
+  <div>+254 727 413 364<br><a href="https://wa.me/254727413364">Chat on WhatsApp</a></div>
+  <div>&copy; <span id="yr"></span> Jamie Design</div>
 </div></footer>
 
-<a class="wa" href="https://wa.me/254700000000" aria-label="Chat on WhatsApp">WA</a>
+<a class="wa" href="https://wa.me/254727413364" aria-label="Chat on WhatsApp">WA</a>
+<div class="mbar"><a href="tel:+254727413364">Call</a><a href="https://wa.me/254727413364">WhatsApp</a><a href="#quote">Get a quote</a></div>
 
 <script>
 (function(){
-  var menu=document.getElementById('menu'),openB=document.getElementById('open'),closeB=document.getElementById('close');
-  function set(o){menu.classList.toggle('open',o);openB.setAttribute('aria-expanded',o);document.body.style.overflow=o?'hidden':'';if(o)closeB.focus();else openB.focus()}
-  openB.onclick=function(){set(true)};closeB.onclick=function(){set(false)};
+  var WA='254727413364';
+  var services=[
+    ['Gypsum ceilings','Smooth, modern ceilings with clean joints and perfect finishing.'],
+    ['False ceilings','Stepped, curved and recessed designs that add height and character.'],
+    ['Lighting design','Cove, spot and pendant layouts planned with the ceiling.'],
+    ['Interior finishing','Wall panels, cornices, skirting and trim done neatly.'],
+    ['Space planning','Layouts that use every metre well and feel open.'],
+    ['Design concepts','Mood boards and concepts you approve before work starts.'],
+    ['Painting and decoration','Careful preparation, paint, textures and feature walls.'],
+    ['Colour selection','Palettes matched to your light, furniture and mood.'],
+    ['Decor artwork','Curated art and accessories to finish the room.'],
+    ['Curtains and accessories','Made-to-fit curtains, cushions and finishing touches.']
+  ];
+  var projects=[
+    {t:'Living room ceiling',d:'Stepped gypsum ceiling with cove lighting',b:'linear-gradient(160deg,#8c8883,#5d5955)',a:'radial-gradient(circle at 50% 35%,#fff0cf 0,#e9b56b 28%,#7a3350 70%)'},
+    {t:'Master bedroom',d:'New paint, feature wall and lighting',b:'linear-gradient(160deg,#a9a29c,#6f6a65)',a:'linear-gradient(160deg,#A81F58,#4f0f2c)'},
+    {t:'Open-plan kitchen',d:'False ceiling, finishing and colour update',b:'linear-gradient(160deg,#9a9690,#625e59)',a:'linear-gradient(160deg,#d8b377,#7c5a2c)'}
+  ];
+  function bg(x){return /^images\//.test(x)?'url("'+x+'")':x}
+  var sg=document.getElementById('svcGrid'),sel=document.getElementById('svcSel');
+  services.forEach(function(s){
+    sg.insertAdjacentHTML('beforeend','<div class="card"><h3>'+s[0]+'</h3><p>'+s[1]+'</p><a href="#quote" data-s="'+s[0]+'">Get a quote</a></div>');
+    sel.insertAdjacentHTML('beforeend','<option>'+s[0]+'</option>');
+  });
+  sel.insertAdjacentHTML('beforeend','<option>Budget-friendly decor ideas</option><option>Not sure yet</option>');
+  document.addEventListener('click',function(e){var a=e.target.closest('[data-s]');if(a)sel.value=a.dataset.s});
+  var pg=document.getElementById('projGrid');
+  projects.forEach(function(p){
+    pg.insertAdjacentHTML('beforeend','<article class="proj"><div class="ba"><div class="layer b" style="background:'+bg(p.b)+';background-size:cover;background-position:center"></div><div class="layer a" style="background:'+bg(p.a)+';background-size:cover;background-position:center"></div><span class="tag l">Before</span><span class="tag r">After</span><div class="handle"></div><input type="range" min="0" max="100" value="50" aria-label="Drag to compare before and after for '+p.t+'"></div><h3>'+p.t+'</h3><p>'+p.d+'</p></article>');
+  });
+  pg.addEventListener('input',function(e){if(e.target.type==='range')e.target.parentNode.style.setProperty('--p',e.target.value+'%')});
+  var menu=document.getElementById('menu'),ob=document.getElementById('open'),cb=document.getElementById('close');
+  function set(o){menu.classList.toggle('open',o);ob.setAttribute('aria-expanded',o);document.body.style.overflow=o?'hidden':'';(o?cb:ob).focus()}
+  ob.onclick=function(){set(true)};cb.onclick=function(){set(false)};
   document.querySelectorAll('[data-nav]').forEach(function(a){a.addEventListener('click',function(){set(false)})});
   document.addEventListener('keydown',function(e){if(e.key==='Escape'&&menu.classList.contains('open'))set(false)});
-  document.querySelectorAll('.filters button').forEach(function(b){b.onclick=function(){
-    document.querySelectorAll('.filters button').forEach(function(x){x.setAttribute('aria-pressed',x===b)});
-    document.querySelectorAll('.tile').forEach(function(t){t.hidden=b.dataset.f!=='all'&&t.dataset.c!==b.dataset.f});
-  }});
-  document.getElementById('quote').addEventListener('submit',function(e){
+  document.getElementById('qform').addEventListener('submit',function(e){
     e.preventDefault();var f=e.target;
-    var t='Hello Jamie Interior Designs, I would like a quote.%0AName: '+encodeURIComponent(f.name.value)+'%0APhone: '+encodeURIComponent(f.phone.value)+'%0AService: '+encodeURIComponent(f.service.value)+'%0ABudget: '+encodeURIComponent(f.budget.value)+'%0AMessage: '+encodeURIComponent(f.msg.value);
-    document.getElementById('sent').textContent='Opening WhatsApp with your request.';
-    window.open('https://wa.me/254700000000?text='+t,'_blank','noopener');
+    var t='Hello Jamie Design, I would like a quote.\nName: '+f.name.value+'\nPhone: '+f.phone.value+'\nLocation: '+f.loc.value+'\nService: '+f.service.value+'\nProject details: '+f.msg.value;
+    document.getElementById('sent').textContent='Opening WhatsApp. Press send there to complete your request.';
+    window.open('https://wa.me/'+WA+'?text='+encodeURIComponent(t),'_blank','noopener');
   });
   document.getElementById('yr').textContent=new Date().getFullYear();
 })();
