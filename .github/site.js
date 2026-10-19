@@ -2,7 +2,7 @@
 var WA='254727413364',PH='+254 727 413 364',P=document.body.dataset.page;
 var nav=[['home','Home','index.html'],['services','Services','services.html'],['portfolio','Portfolio','portfolio.html'],['about','About','about.html'],['contact','Contact','contact.html']];
 function links(){return nav.map(function(n){return '<a href="'+n[2]+'"'+(n[0]===P?' aria-current="page"':'')+'>'+n[1]+'</a>'}).join('')}
-var Q='contact.html#quote';
+var Q='estimate.html';
 /* Paste Jamie Design's page links between the quotes. Empty ones stay hidden until filled. */
 var SOC=[['Facebook','f',''],['Instagram','IG',''],['X','X',''],['LinkedIn','in',''],['WhatsApp','WA','https://wa.me/'+WA]];
 function soc(c){return '<div class="social '+c+'">'+SOC.filter(function(s){return s[2]}).map(function(s){return '<a href="'+s[2]+'" target="_blank" rel="noopener" aria-label="'+s[0]+'">'+s[1]+'</a>'}).join('')+'</div>'}
@@ -49,4 +49,12 @@ if(f)f.addEventListener('submit',function(e){e.preventDefault();
 var t='Hello Jamie Design, I would like a quote.\nName: '+f.name.value+'\nPhone: '+f.phone.value+'\nLocation: '+f.loc.value+'\nService: '+f.service.value+'\nProject details: '+f.msg.value;
 $('sent').textContent='Opening WhatsApp. Press send there to complete your request.';
 window.open('https://wa.me/'+WA+'?text='+encodeURIComponent(t),'_blank','noopener')});
+
+/* WhatsApp: prefilled chat links, floating pill and menu buttons */
+var pg=(document.title.split('|')[0]||'your website').trim();
+var W='https://wa.me/'+WA+'?text='+encodeURIComponent('Hello Jamie Design, I am on your '+pg+' page and would like to ask about your services.');
+document.querySelectorAll('a[href^="https://wa.me/'+WA+'"]').forEach(function(a){if(a.href.indexOf('text=')<0)a.href=W});
+var pill=document.querySelector('.wa');if(pill){pill.innerHTML='<span class="wa-i">WA</span><span class="wa-t">Chat on WhatsApp</span>'}
+var mf=document.querySelector('.m-foot');if(mf)mf.insertAdjacentHTML('afterbegin','<div class="m-act"><a class="btn wbtn" href="'+W+'">Chat on WhatsApp</a><a class="btn wbtn" href="tel:+'+WA+'">Call now</a></div>');
+
 })();
